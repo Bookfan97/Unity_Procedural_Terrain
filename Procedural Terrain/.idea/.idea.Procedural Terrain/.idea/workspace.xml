@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca7b324-e309-473f-93d8-457e8c72384c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605323650567</updated>
       <workItem from="1605323659135" duration="5905000" />
+      <workItem from="1605375130816" duration="1086000" />
     </task>
     <servers />
   </component>
@@ -102,6 +106,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
