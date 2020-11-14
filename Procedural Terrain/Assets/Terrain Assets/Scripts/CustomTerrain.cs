@@ -10,9 +10,13 @@ using System.Linq;
 public class CustomTerrain : MonoBehaviour
 {
     public Vector2 randomHeightRange = new Vector2(0, 0.1f);
+    public Texture2D heightMapImage;
+    public Vector3 heightMapScale = new Vector3(1,1,1); 
+        
     public Terrain terrain;
     public TerrainData terrainData;
     
+
     public void RandomTerrain()
     {
         float[,] heightMap = terrainData.GetHeights(0, 0, terrainData.heightmapResolution, terrainData.heightmapResolution);
@@ -38,6 +42,23 @@ public class CustomTerrain : MonoBehaviour
             }
             terrainData.SetHeights(0,0, heightMap);
         }
+    }
+
+    public void LoadTexture()
+    {
+        float[,] heightMap;
+        heightMap = new float[terrainData.heightmapResolution, terrainData.heightmapResolution];
+
+        for (int x = 0; x < terrainData.heightmapResolution; x++)
+        {
+            for (int z = 0; z < terrainData.heightmapResolution; z++)
+            {
+                heightMap[x, z] = heightMapImage.GetPixel((int)(x * heightMapScale.x), 
+                                      (int)(z * heightMapScale.z)).grayscale 
+                                  * heightMapScale.y;
+            }
+        }
+        terrainData.SetHeights(0, 0, heightMap);
     }
 
     private void OnEnable()
