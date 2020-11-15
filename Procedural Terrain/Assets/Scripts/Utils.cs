@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Utils
+public static class Utils 
 {
     public static float fBM(float x, float y, int oct, float persistance)
     {
