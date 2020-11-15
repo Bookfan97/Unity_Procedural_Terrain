@@ -28,6 +28,7 @@ public class CustomTerrainEditor : Editor
     bool showLoadHeights = false;
     bool showPerlinNoise = false;
     bool showMultiplePerlin = false;
+    bool showVoronoi = false;
 
     void OnEnable()
     {
@@ -105,6 +106,7 @@ public class CustomTerrainEditor : Editor
             EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
             GUILayout.Label("Mulitple Perlin Noise", EditorStyles.boldLabel);
             perlinParameterTable = GUITableLayout.DrawTable(perlinParameterTable, serializedObject.FindProperty("perlinParameters"));
+            GUILayout.Space(20);
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("+"))
             {
@@ -118,6 +120,16 @@ public class CustomTerrainEditor : Editor
             if (GUILayout.Button("Apply Multiple Perlin"))
             {
                 terrain.MultiplePerlinTerrain();
+            }
+        }
+        showVoronoi = EditorGUILayout.Foldout(showVoronoi, "Voronoi");
+        if (showVoronoi)
+        {
+            EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+            GUILayout.Label("Voronoi", EditorStyles.boldLabel);
+            if (GUILayout.Button("Voronoi"))
+            {
+                terrain.Voronoi();
             }
         }
 

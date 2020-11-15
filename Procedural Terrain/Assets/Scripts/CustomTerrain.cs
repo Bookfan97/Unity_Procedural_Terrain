@@ -46,7 +46,7 @@ public class CustomTerrain : MonoBehaviour
 
     public Terrain terrain;
     public TerrainData terrainData;
-
+    
     float[,] GetHeightMap()
     {
         if (!resetTerrain)
@@ -57,9 +57,41 @@ public class CustomTerrain : MonoBehaviour
         else
             return new float[terrainData.heightmapResolution,
                              terrainData.heightmapResolution];
-            
     }
-
+    
+    public void Voronoi()
+    {
+        float[,] heightMap = GetHeightMap();
+        float fallOff = 2.0f;
+        Vector3 peak = new Vector3(256, 0.5f, 256);
+        /*Vector3 peak = new Vector3(
+            UnityEngine.Random.Range(0, terrainData.heightmapResolution),
+            UnityEngine.Random.Range(0.0f, 1.0f),
+            UnityEngine.Random.Range(0, terrainData.heightmapResolution)
+            );*/
+        heightMap[(int) peak.x, (int) peak.z] = peak.y;
+        Vector2 peakLocation = new Vector2(peak.x, peak.z);
+        float maxDistance = Vector2.Distance(
+            new Vector2(0, 0),
+            new Vector2(terrainData.heightmapResolution, terrainData.heightmapResolution)
+            );
+        for (int y = 0; y < terrainData.heightmapResolution; y++)
+        {
+            for (int x = 0; x < terrainData.heightmapResolution; x++)
+            {
+                if (!(x == peak.x && y == peak.z))
+                {
+                    float distanceToPeak = Vector2.Distance(
+                        peakLocation, 
+                        new Vector2(x, y) * fallOff
+                        );
+                    heightMap[x, y] = peak.y - (distanceToPeak / maxDistance);
+                }
+            }
+        }
+        terrainData.SetHeights(0,0, heightMap);
+    }
+    
     public void Perlin()
     {
         float[,] heightMap = GetHeightMap();
