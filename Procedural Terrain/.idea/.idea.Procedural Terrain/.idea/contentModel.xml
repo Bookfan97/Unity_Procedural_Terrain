@@ -37,6 +37,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CustomTerrain.cs" t="Include" />
+          <e p="Utils.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

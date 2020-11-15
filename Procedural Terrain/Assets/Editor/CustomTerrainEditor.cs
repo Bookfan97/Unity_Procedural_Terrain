@@ -19,6 +19,9 @@ public class CustomTerrainEditor : Editor
     SerializedProperty perlinYScale;
     SerializedProperty perlinOffsetX;
     SerializedProperty perlinOffsetY;
+    SerializedProperty perlinOctaves;
+    SerializedProperty perlinPersistence;
+    SerializedProperty perlinHeightScale;
     
     //Fold outs
     bool showRandom = false;
@@ -34,6 +37,9 @@ public class CustomTerrainEditor : Editor
         perlinYScale = serializedObject.FindProperty("perlinYScale");
         perlinOffsetX = serializedObject.FindProperty("perlinOffsetX");
         perlinOffsetY = serializedObject.FindProperty("perlinOffsetY");
+        perlinOctaves = serializedObject.FindProperty("perlinOctaves");
+        perlinPersistence = serializedObject.FindProperty("perlinPersistence");
+        perlinHeightScale = serializedObject.FindProperty("perlinHeightScale");
     }
 
     public override void OnInspectorGUI()
@@ -68,15 +74,19 @@ public class CustomTerrainEditor : Editor
             }
         }
         
-        showLoadHeights = EditorGUILayout.Foldout(showLoadHeights, "Single Perlin Noise");
-        if (showLoadHeights)
+        showPerlinNoise = EditorGUILayout.Foldout(showPerlinNoise, "Single Perlin Noise");
+        if (showPerlinNoise)
         {
             EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
             GUILayout.Label("Perlin Noise Scale", EditorStyles.boldLabel);
             EditorGUILayout.Slider(perlinXScale, 0, 1, new GUIContent("X Scale"));
             EditorGUILayout.Slider(perlinYScale, 0, 1, new GUIContent("Y Scale"));
-            EditorGUILayout.IntSlider(perlinOffsetX, 0, 1000, new GUIContent("Offset X"));
-            EditorGUILayout.IntSlider(perlinOffsetY, 0, 1000, new GUIContent("Offset Y"));
+            EditorGUILayout.IntSlider(perlinOffsetX, 0, 10000, new GUIContent("Offset X"));
+            EditorGUILayout.IntSlider(perlinOffsetY, 0, 10000, new GUIContent("Offset Y"));
+            EditorGUILayout.IntSlider(perlinOctaves, 1, 10, new GUIContent("Octaves"));
+            EditorGUILayout.Slider(perlinPersistence, 0.1f, 10, new GUIContent("Persistence"));
+            EditorGUILayout.Slider(perlinHeightScale, 0, 1, new GUIContent("Height Scale"));
+            
             if (GUILayout.Button("Run Perlin Noise"))
             {
                 terrain.Perlin();

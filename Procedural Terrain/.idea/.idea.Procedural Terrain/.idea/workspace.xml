@@ -23,9 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +34,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" />
       </list>
@@ -87,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605323650567</updated>
       <workItem from="1605323659135" duration="5905000" />
-      <workItem from="1605375130816" duration="1086000" />
+      <workItem from="1605375130816" duration="4986000" />
     </task>
     <servers />
   </component>
