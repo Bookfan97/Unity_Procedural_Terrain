@@ -49,7 +49,15 @@ public class CustomTerrain : MonoBehaviour
     public float voronoiMinHeight = 0.1f;
     public float voronoiMaxHeight = 0.5f;
     public int voronoiPeaks = 5;
-    
+    public enum VoronoiType
+    {
+        Linear = 0,
+        Power = 1,
+        Combined = 2,
+        SinPow = 3
+    }
+
+    public VoronoiType voronoiType = VoronoiType.Linear;
 
     public Terrain terrain;
     public TerrainData terrainData;
@@ -99,8 +107,23 @@ public class CustomTerrain : MonoBehaviour
                         float distanceToPeak = Vector2.Distance(
                             peakLocation,
                             new Vector2(x, y)) / maxDistance;
-                        float h = peak.y - distanceToPeak * voronoiFallOff -  Mathf.Pow(distanceToPeak, voronoiDropOff);
-                        //float h = peak.y - Mathf.Sin(distanceToPeak * 100) * 0.1f;
+                        float h;
+                        if (voronoiType == VoronoiType.Combined)
+                        {
+                            h = peak.y - distanceToPeak * voronoiFallOff - Mathf.Pow(distanceToPeak, voronoiDropOff);
+                        }
+                        else if(voronoiType == VoronoiType.Power)
+                        {
+                            h = peak.y - Mathf.Pow(distanceToPeak, voronoiDropOff) * voronoiFallOff;
+                        }
+                        else if(voronoiType == VoronoiType.SinPow)
+                        {
+                            h = peak.y - Mathf.Pow(distanceToPeak*3, voronoiFallOff) - Mathf.Sin(distanceToPeak*2*Mathf.PI)/voronoiDropOff;
+                        }
+                        else
+                        {
+                            h = peak.y - distanceToPeak * voronoiFallOff;
+                        }
                         if (heightMap[x,y]<h)
                         {
                             heightMap[x, y] = h;                            
