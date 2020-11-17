@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca7b324-e309-473f-93d8-457e8c72384c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,8 @@
       <updated>1605323650567</updated>
       <workItem from="1605323659135" duration="5905000" />
       <workItem from="1605375130816" duration="6204000" />
-      <workItem from="1605408897580" duration="2658000" />
+      <workItem from="1605408897580" duration="3281000" />
+      <workItem from="1605586715433" duration="608000" />
     </task>
     <servers />
   </component>
