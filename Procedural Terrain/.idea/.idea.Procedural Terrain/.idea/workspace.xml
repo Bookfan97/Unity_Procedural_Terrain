@@ -41,8 +41,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +89,7 @@
       <workItem from="1605375130816" duration="6204000" />
       <workItem from="1605408897580" duration="3281000" />
       <workItem from="1605586715433" duration="3815000" />
-      <workItem from="1605664750486" duration="3629000" />
+      <workItem from="1605664750486" duration="7867000" />
     </task>
     <servers />
   </component>
