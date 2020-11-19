@@ -78,6 +78,8 @@ public class CustomTerrainEditor : Editor
         splatHeights = serializedObject.FindProperty("splatHeights");
     }
 
+    private Vector2 scrollPos;
+
     public override void OnInspectorGUI()
     {
         //Start
@@ -85,6 +87,10 @@ public class CustomTerrainEditor : Editor
         //Start
 
         CustomTerrain terrain = (CustomTerrain) target;
+        Rect r = EditorGUILayout.BeginVertical();
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos, GUILayout.Width(r.width),
+            GUILayout.Height(r.height));
+        EditorGUI.indentLevel++;
         EditorGUILayout.PropertyField(resetTerrain);
 
         showRandom = EditorGUILayout.Foldout(showRandom, "Random");
@@ -222,7 +228,8 @@ public class CustomTerrainEditor : Editor
         {
             terrain.ResetTerrain();
         }
-
+        EditorGUILayout.EndScrollView();
+        EditorGUILayout.EndVertical();
         //End
         serializedObject.ApplyModifiedProperties();
         //End
