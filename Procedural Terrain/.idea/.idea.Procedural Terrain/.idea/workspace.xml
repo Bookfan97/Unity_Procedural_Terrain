@@ -21,30 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ca7b324-e309-473f-93d8-457e8c72384c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Cliff (Grassy).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Cliff (Grassy).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Cliff (Layered Rock).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Cliff (Layered Rock).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Cliff (Sandstone).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Cliff (Sandstone).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/DirtGrass.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/DirtGrass.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Forest Floor.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Forest Floor.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/GoodDirt.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/GoodDirt.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Hill).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Hill).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Lawn).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Lawn).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Meadows).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Meadows).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Meadows2).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Meadows2).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Muddy).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass (Muddy).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass&amp;Rock.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Grass&amp;Rock.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Path (Rocky).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Path (Rocky).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Pebbles.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Pebbles.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Rock (Basic).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Rock (Basic).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Rock (Moss).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Rock (Moss).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Rocky Dirt.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Rocky Dirt.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (Beach Wet2).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (Beach Wet2).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (Beach).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (Beach).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (Beach2).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (Beach2).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (with pebbles).jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Sand (with pebbles).jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Snow.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain Assets/Textures/Snow.jpg.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +89,7 @@
       <workItem from="1605408897580" duration="3281000" />
       <workItem from="1605586715433" duration="3815000" />
       <workItem from="1605664750486" duration="9972000" />
-      <workItem from="1605749048717" duration="4216000" />
+      <workItem from="1605749048717" duration="6032000" />
     </task>
     <servers />
   </component>

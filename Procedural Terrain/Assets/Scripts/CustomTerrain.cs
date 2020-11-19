@@ -147,6 +147,42 @@ public class CustomTerrain : MonoBehaviour
             );
         float[,,] splatmapData =
             new float[terrainData.alphamapWidth, terrainData.alphamapHeight, terrainData.alphamapLayers];
+        for (int y = 0; y < terrainData.alphamapWidth; y++)
+        {
+            for (int x = 0; x < terrainData.alphamapWidth; x++)
+            {
+                float[] splat = new float[terrainData.alphamapLayers];
+                for (int i = 0; i < splatHeights.Count; i++)
+                {
+                    float thisHeightStart = splatHeights[i].minHeight;
+                    float thisHeightStop = splatHeights[i].maxHeight;
+                    if (heightMap[x, y] >= thisHeightStart && heightMap[x,y] <= thisHeightStop)
+                    {
+                        splat[i] = 1;
+                    }
+                }
+                NormalizeVector(splat);
+                for (int j = 0; j < splatHeights.Count; j++)
+                {
+                    splatmapData[x, y, j] = splat[j];
+                }
+            }
+        }
+        terrainData.SetAlphamaps(0,0,splatmapData);
+    }
+
+    void NormalizeVector(float[] v)
+    {
+        float total = 0;
+        for (int i = 0; i < v.Length; i++)
+        {
+            total += v[i];
+        }
+
+        for (int i = 0; i < v.Length; i++)
+        {
+            v[i] /= total;
+        }
     }
 
     public void Smooth()

@@ -345,14 +345,20 @@ MonoBehaviour:
     tileSize: {x: 50, y: 50}
     remove: 0
   - texture: {fileID: 2800000, guid: e4cc6b89f7fe0415b99809d203397c20, type: 3}
-    minHeight: 0.1
-    maxHeight: 0.2
+    minHeight: 0.2
+    maxHeight: 0.4
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
     remove: 0
-  - texture: {fileID: 2800000, guid: 004b783a095f74e7196db2e1a3a6c2d8, type: 3}
-    minHeight: 0.1
-    maxHeight: 0.2
+  - texture: {fileID: 2800000, guid: fa749c6a04ad34af5af35082813d7df8, type: 3}
+    minHeight: 0.4
+    maxHeight: 0.6
+    tileOffset: {x: 0, y: 0}
+    tileSize: {x: 50, y: 50}
+    remove: 0
+  - texture: {fileID: 2800000, guid: 8b428e4e6cc624a4c9235f69da8e3edb, type: 3}
+    minHeight: 0
+    maxHeight: 0.1
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
     remove: 0
