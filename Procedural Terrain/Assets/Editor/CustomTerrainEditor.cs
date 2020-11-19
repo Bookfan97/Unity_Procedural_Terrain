@@ -30,13 +30,14 @@ public class CustomTerrainEditor : Editor
     SerializedProperty MPDheightDampenerPower;
     SerializedProperty MPDroughness;
     SerializedProperty smoothAmount;
-    
+
     GUITableState perlinParameterTable;
     SerializedProperty perlinParameters;
     
     GUITableState splatMapTable;
     SerializedProperty splatHeights;
-
+    
+    
     //Fold outs
     bool showRandom = false;
     bool showLoadHeights = false;

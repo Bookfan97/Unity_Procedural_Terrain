@@ -78,6 +78,11 @@ public class CustomTerrain : MonoBehaviour
         public Vector2 tileOffset = new Vector2(0,0);
         public Vector2 tileSize = new Vector2(50,50);
         public bool remove = false;
+        public float splatOffset = 0.1f;
+        public float splatNoiseXScale = 0.01f;
+        public float splatNoiseYScale = 0.01f;
+        public float splatNoiseScaler = 0.1f;
+
     }
     
     public List<SplatHeights> splatHeights = new List<SplatHeights>()
@@ -139,24 +144,28 @@ public class CustomTerrain : MonoBehaviour
             Selection.activeObject = this.gameObject;
         }
         terrainData.terrainLayers = newSplatPrototypes;
-        float[,] heightMap = terrainData.GetHeights(
-            0, 
-            0, 
-            terrainData.heightmapResolution,
-            terrainData.heightmapResolution
-            );
-        float[,,] splatmapData =
-            new float[terrainData.alphamapWidth, terrainData.alphamapHeight, terrainData.alphamapLayers];
-        for (int y = 0; y < terrainData.alphamapWidth; y++)
+
+        float[,] heightMap = terrainData.GetHeights(0, 0, terrainData.heightmapResolution, 
+                                                          terrainData.heightmapResolution);
+        float[,,] splatmapData = new float[terrainData.alphamapWidth,
+                                               terrainData.alphamapHeight,
+                                               terrainData.alphamapLayers];
+
+        for (int y = 0; y < terrainData.alphamapHeight; y++)
         {
             for (int x = 0; x < terrainData.alphamapWidth; x++)
             {
                 float[] splat = new float[terrainData.alphamapLayers];
                 for (int i = 0; i < splatHeights.Count; i++)
                 {
-                    float thisHeightStart = splatHeights[i].minHeight;
-                    float thisHeightStop = splatHeights[i].maxHeight;
-                    if (heightMap[x, y] >= thisHeightStart && heightMap[x,y] <= thisHeightStop)
+                    float noise = Mathf.PerlinNoise(x * splatHeights[i].splatNoiseXScale, 
+                                                    y * splatHeights[i].splatNoiseYScale) 
+                                       * splatHeights[i].splatNoiseScaler;
+                    float offset = splatHeights[i].splatOffset + noise;
+                    float thisHeightStart = splatHeights[i].minHeight - offset;
+                    float thisHeightStop = splatHeights[i].maxHeight + offset;
+                    
+                    if (heightMap[x, y] >= thisHeightStart && heightMap[x, y] <= thisHeightStop)
                     {
                         splat[i] = 1;
                     }
@@ -168,7 +177,7 @@ public class CustomTerrain : MonoBehaviour
                 }
             }
         }
-        terrainData.SetAlphamaps(0,0,splatmapData);
+        terrainData.SetAlphamaps(0, 0, splatmapData);
     }
 
     void NormalizeVector(float[] v)
