@@ -58,8 +58,44 @@ public class TextureCreatorWindow : EditorWindow
             {
                 for (int x = 0; x < w; x++)
                 {
-                    pValue = Utils.fBM((x + perlinOffsetX) * perlinXScale, (y + perlinOffsetY) * perlinYScale,
-                        perlinOctaves, perlinPersistance) * perlinHeightScale;
+                    if (seamlessToggle)
+                    {
+                        float u = (float)x / (float)w;
+                        float v = (float)y / (float)h;
+                        float noise00 = Utils.fBM((x + perlinOffsetX) * perlinXScale, 
+                                                  (y + perlinOffsetY) * perlinYScale,
+                                            perlinOctaves,
+                                            perlinPersistance) * perlinHeightScale;
+                        float noise01 = Utils.fBM((x + perlinOffsetX) * perlinXScale, 
+                                                  (y + perlinOffsetY + h) * perlinYScale,
+                                            perlinOctaves,
+                                            perlinPersistance) * perlinHeightScale;
+                        float noise10 = Utils.fBM((x + perlinOffsetX + w) * perlinXScale, 
+                                                  (y + perlinOffsetY) * perlinYScale,
+                                            perlinOctaves,
+                                            perlinPersistance) * perlinHeightScale;
+                        float noise11 = Utils.fBM((x + perlinOffsetX + w) * perlinXScale, 
+                                                  (y + perlinOffsetY + h) * perlinYScale,
+                                            perlinOctaves,
+                                            perlinPersistance) * perlinHeightScale;
+                        float noiseTotal =  u * v * noise00 + 
+                                        u * (1 - v) * noise01 + 
+                                        (1 - u) * v * noise10 + 
+                                        (1 - u) * (1 - v) * noise11;
+
+                        float value = (int)(256 * noiseTotal) + 50;
+                        float r = Mathf.Clamp((int) noise00,0,255);
+                        float g = Mathf.Clamp(value, 0, 255);
+                        float b = Mathf.Clamp(value + 50, 0, 255);
+                        float a = Mathf.Clamp(value + 100, 0, 255);
+
+                        pValue = (r + g + b) / (3 * 255.0f);
+                    }
+                    else
+                    {
+                        pValue = Utils.fBM((x + perlinOffsetX) * perlinXScale, (y + perlinOffsetY) * perlinYScale,
+                            perlinOctaves, perlinPersistance) * perlinHeightScale;
+                    }
                     float colValue = pValue;
                     pixCol = new Color(colValue, colValue, alphaToggle ? colValue : 1);
                     pTexture.SetPixel(x, y, pixCol);
@@ -79,7 +115,9 @@ public class TextureCreatorWindow : EditorWindow
         GUILayout.FlexibleSpace();
         if (GUILayout.Button("Save", GUILayout.Width(wSize)))
         {
-            
+            byte[] bytes = pTexture.EncodeToPNG();
+            System.IO.Directory.CreateDirectory(Application.dataPath + "/SavedTextures");
+            File.WriteAllBytes(Application.dataPath + "/Savedtextures/"+filename + ".png", bytes);
         }
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
