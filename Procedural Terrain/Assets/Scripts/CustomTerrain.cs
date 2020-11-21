@@ -153,15 +153,32 @@ public class CustomTerrain : MonoBehaviour
                         instance.position = new Vector3(
                             (x + UnityEngine.Random.Range(-5.0f, 5.0f)) / terrainData.size.x,
                             thisHeight,
-                            z / terrainData.size.z);
-                        instance.rotation = UnityEngine.Random.Range(0, 360);
-                        instance.prototypeIndex = tp;
-                        instance.color = Color.white;
-                        instance.lightmapColor = Color.white;
-                        instance.heightScale = 0.95f;
-                        instance.widthScale = 0.95f;
-                        allVegetation.Add(instance);
-                        if (allVegetation.Count >= maxTrees) goto TREESDONE;
+                            (z + UnityEngine.Random.Range(-5.0f, 5.0f)) / terrainData.size.z);
+                        Vector3 treeWorldPos = new Vector3(
+                            instance.position.x * terrainData.size.x,
+                            instance.position.y * terrainData.size.y,
+                            instance.position.z * terrainData.size.z
+                        ) + this.transform.position;
+                        RaycastHit hit;
+                        int layerMask = 1 << terrainLayer;
+                        if (Physics.Raycast(treeWorldPos, -Vector3.up, out hit, 100, layerMask) ||
+                            Physics.Raycast(treeWorldPos, Vector3.up, out hit, 100, layerMask))
+                        {
+                            float treeHeight = (hit.point.y - this.transform.position.y) / terrainData.size.y;
+                            instance.position = new Vector3(
+                                instance.position.x,
+                                treeHeight,
+                                instance.position.z
+                            );
+                            instance.rotation = UnityEngine.Random.Range(0, 360);
+                            instance.prototypeIndex = tp;
+                            instance.color = Color.white;
+                            instance.lightmapColor = Color.white;
+                            instance.heightScale = 0.95f;
+                            instance.widthScale = 0.95f;
+                            allVegetation.Add(instance);
+                            if (allVegetation.Count >= maxTrees) goto TREESDONE;
+                        }
                     }
                 }
             }
