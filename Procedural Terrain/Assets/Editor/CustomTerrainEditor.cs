@@ -30,7 +30,12 @@ public class CustomTerrainEditor : Editor
     SerializedProperty MPDheightDampenerPower;
     SerializedProperty MPDroughness;
     SerializedProperty smoothAmount;
-
+    
+    
+    GUITableState vegMapTable;
+    SerializedProperty maxTrees;
+    SerializedProperty treeSpacing;
+    
     GUITableState perlinParameterTable;
     SerializedProperty perlinParameters;
     
@@ -49,7 +54,7 @@ public class CustomTerrainEditor : Editor
     bool showSmooth = false;
     bool showSplatMaps = false;
     private bool showHeights = false;
-
+    private bool showVeg = false;
     void OnEnable()
     {
         randomHeightRange = serializedObject.FindProperty("randomHeightRange");
@@ -78,6 +83,9 @@ public class CustomTerrainEditor : Editor
         smoothAmount = serializedObject.FindProperty("smoothAmount");
         splatMapTable = new GUITableState("splatMapTable");
         splatHeights = serializedObject.FindProperty("splatHeights");
+        vegMapTable = new GUITableState("vegetation");
+        maxTrees = serializedObject.FindProperty("maxTrees");
+        treeSpacing = serializedObject.FindProperty("treeSpacing");
         hmTexture = new Texture2D(513, 513, TextureFormat.ARGB32, false);
     }
 
@@ -107,7 +115,6 @@ public class CustomTerrainEditor : Editor
                 terrain.RandomTerrain();
             }
         }
-
         showLoadHeights = EditorGUILayout.Foldout(showLoadHeights, "Load Heights");
         if (showLoadHeights)
         {
@@ -120,7 +127,6 @@ public class CustomTerrainEditor : Editor
                 terrain.LoadTexture();
             }
         }
-
         showPerlinNoise = EditorGUILayout.Foldout(showPerlinNoise, "Single Perlin Noise");
         if (showPerlinNoise)
         {
@@ -139,7 +145,6 @@ public class CustomTerrainEditor : Editor
                 terrain.Perlin();
             }
         }
-
         showMultiplePerlin = EditorGUILayout.Foldout(showMultiplePerlin, "Multiple Perlin Noise");
         if (showMultiplePerlin)
         {
@@ -223,6 +228,31 @@ public class CustomTerrainEditor : Editor
             if (GUILayout.Button("Apply Splatmaps"))
             {
                 terrain.SplatMaps();
+            }
+        }
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        showVeg = EditorGUILayout.Foldout(showVeg, "Vegetation");
+        if (showVeg)
+        {
+            EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+            GUILayout.Label("Trees", EditorStyles.boldLabel);
+            EditorGUILayout.IntSlider(maxTrees, 0, 10000, new GUIContent("Maximum Trees"));
+            EditorGUILayout.IntSlider(treeSpacing, 2, 20, new GUIContent("Tree Spacing"));
+            splatMapTable = GUITableLayout.DrawTable(vegMapTable, serializedObject.FindProperty("vegetation"));
+            GUILayout.Space(20);
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("+"))
+            {
+                terrain.AddNewVegetation();
+            }
+            if (GUILayout.Button("-"))
+            {
+                terrain.RemoveVegetation();
+            }
+            EditorGUILayout.EndHorizontal();
+            if (GUILayout.Button("Add Vegetation"))
+            {
+                terrain.PlantVegetation();
             }
         }
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
