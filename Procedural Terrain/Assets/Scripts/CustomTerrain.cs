@@ -603,33 +603,56 @@ public class CustomTerrain : MonoBehaviour
         terrain = this.GetComponent<Terrain>();
         terrainData = Terrain.activeTerrain.terrainData;
     }
-
+    
+    public enum TagType
+    {
+        Tag = 0,
+        Layer = 1
+    } 
+    int terrainLayer = 0;
     void Awake()
     {
         SerializedObject tagManager = new SerializedObject(
             AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]
             );
         SerializedProperty tagsProp = tagManager.FindProperty("tags");
-        AddTag(tagsProp, "Terrain");
-        AddTag(tagsProp, "Cloud");
-        AddTag(tagsProp, "Shore");
+        AddTag(tagsProp, "Terrain", TagType.Tag);
+        AddTag(tagsProp, "Cloud", TagType.Tag);
+        AddTag(tagsProp, "Shore", TagType.Tag);
+        tagManager.ApplyModifiedProperties();
+        SerializedProperty layerProp = tagManager.FindProperty("layers");
+        terrainLayer = AddTag(layerProp, "Terrain", TagType.Layer);
         tagManager.ApplyModifiedProperties();
         this.gameObject.tag = "Terrain";
+        this.gameObject.layer = terrainLayer;
     }
 
-    void AddTag(SerializedProperty tagsProp, string newTag)
+    int AddTag(SerializedProperty tagsProp, string newTag, TagType tagType)
     {
         bool found = false;
         for (int i = 0; i < tagsProp.arraySize; i++)
         {
             SerializedProperty t = tagsProp.GetArrayElementAtIndex(i);
-            if (t.stringValue.Equals(newTag)) { found = true; break; }
+            if (t.stringValue.Equals(newTag)) { found = true; return i; }
         }
-        if (!found)
+        if (!found && tagType == TagType.Tag)
         {
             tagsProp.InsertArrayElementAtIndex(0);
             SerializedProperty newTagProp = tagsProp.GetArrayElementAtIndex(0);
             newTagProp.stringValue = newTag;
         }
-	}
+        else if (!found && tagType == TagType.Layer)
+        {
+            for (int j = 0; j < tagsProp.arraySize; j++)
+            {
+                SerializedProperty newLayer = tagsProp.GetArrayElementAtIndex(j);
+                if (newLayer.stringValue == "")
+                {
+                    newLayer.stringValue = newTag;
+                    return j;
+                }
+            }
+        }
+        return -1;
+    }
 }
