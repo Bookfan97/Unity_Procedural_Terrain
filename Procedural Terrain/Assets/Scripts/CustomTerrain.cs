@@ -127,6 +127,11 @@ public class CustomTerrain : MonoBehaviour
         public float maxHeight = 0.2f;
         public float minSlope = 0;
         public float maxSlope = 1;
+        public Color dryColor = Color.white;
+        public Color healthyColor = Color.white;
+        public Vector2 heightRange = new Vector2();
+        public Vector2 widthRange = new Vector2();
+        public float noiseSpread = 0.5f;
         public float overlap = 0.01f;
         public float feather = 0.05f;
         public float density = 0.5f;
@@ -163,7 +168,13 @@ public class CustomTerrain : MonoBehaviour
             newDetailPrototypes[dindex] = new DetailPrototype();
             newDetailPrototypes[dindex].prototype = d.prototype;
             newDetailPrototypes[dindex].prototypeTexture = d.prototypeTexture;
-            newDetailPrototypes[dindex].healthyColor = Color.white;
+            newDetailPrototypes[dindex].healthyColor = d.healthyColor;
+            newDetailPrototypes[dindex].dryColor = d.dryColor;
+            newDetailPrototypes[dindex].minHeight = d.heightRange.x;
+            newDetailPrototypes[dindex].maxHeight = d.heightRange.y;
+            newDetailPrototypes[dindex].minWidth = d.widthRange.x;
+            newDetailPrototypes[dindex].maxWidth = d.widthRange.y;
+            newDetailPrototypes[dindex].noiseSpread = d.noiseSpread;
             if (newDetailPrototypes[dindex].prototype)
             {
                 newDetailPrototypes[dindex].usePrototypeMesh = true;

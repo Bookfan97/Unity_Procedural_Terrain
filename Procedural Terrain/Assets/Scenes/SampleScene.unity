@@ -259,7 +259,7 @@ Terrain:
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 968
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -436,6 +436,11 @@ MonoBehaviour:
     maxHeight: 0.2
     minSlope: 0
     maxSlope: 1
+    dryColor: {r: 1, g: 1, b: 1, a: 1}
+    healthyColor: {r: 1, g: 1, b: 1, a: 1}
+    heightRange: {x: 1, y: 5}
+    widthRange: {x: 1, y: 1}
+    noiseSpread: 0.5
     overlap: 0.01
     feather: 0.05
     density: 0.001
@@ -446,12 +451,17 @@ MonoBehaviour:
     maxHeight: 0.2
     minSlope: 0
     maxSlope: 70
+    dryColor: {r: 1, g: 0.31078154, b: 0, a: 1}
+    healthyColor: {r: 0.034828186, g: 1, b: 0, a: 1}
+    heightRange: {x: 1, y: 5}
+    widthRange: {x: 1, y: 5}
+    noiseSpread: 0.1
     overlap: 0.01
     feather: 0.05
     density: 1
     remove: 0
-  maxDetails: 5000
-  detailSpacing: 5
+  maxDetails: 968
+  detailSpacing: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
