@@ -176,8 +176,9 @@ public class CustomTerrain : MonoBehaviour
             }
             dindex++;
         }
-
         terrainData.detailPrototypes = newDetailPrototypes;
+        float[,] heightMap =
+            terrainData.GetHeights(0, 0, terrainData.heightmapResolution, terrainData.heightmapResolution);
         for (int i = 0; i < terrainData.detailPrototypes.Length; i++)
         {
             int[,] detailMap = new int[terrainData.detailWidth, terrainData.detailHeight];
@@ -185,12 +186,26 @@ public class CustomTerrain : MonoBehaviour
             {
                 for (int x = 0; x < terrainData.detailWidth; x += detailSpacing)
                 {
-                    if (UnityEngine.Random.Range(0.0f, 1.0F)> details[i].density)
+                    if (UnityEngine.Random.Range(0.0f, 1.0F)> details[i].density) continue;
+                    int xHM = (int)(x/(float)terrainData.detailWidth * terrainData.heightmapResolution);
+                    int yHM = (int)(y/(float)terrainData.detailHeight * terrainData.heightmapResolution);;
+                    float thisNoise = Utils.Map(Mathf.PerlinNoise(
+                        x*details[i].feather, 
+                        y*details[i].feather),
+                        0,
+                        1,
+                        0.5f,
+                        1
+                        );
+                    float thisHeightStart = details[i].minHeight * thisNoise - details[i].overlap * thisNoise;
+                    float nextHeightStart = details[i].maxHeight * thisNoise + details[i].overlap * thisNoise;
+                    float thisHeight = heightMap[yHM, xHM];
+                    float steepness = terrainData.GetSteepness(xHM /(float) terrainData.size.x, yHM /(float) terrainData.size.z);
+                    if ((thisHeight >= thisHeightStart && thisHeight <= nextHeightStart) && 
+                        (steepness >= details[i].minSlope && steepness <= details[i].maxSlope))
                     {
-                        continue;
+                        detailMap[x, y] = 1;
                     }
-
-                    detailMap[x, y] = 1;
                 }
             }
             terrainData.SetDetailLayer(0,0,i, detailMap);
