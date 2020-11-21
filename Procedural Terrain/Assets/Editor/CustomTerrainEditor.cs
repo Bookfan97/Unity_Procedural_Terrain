@@ -42,6 +42,8 @@ public class CustomTerrainEditor : Editor
     private SerializedProperty details;
     private SerializedProperty maxDetails;
     private SerializedProperty detailSpacing;
+    private SerializedProperty waterHeight;    
+    private SerializedProperty waterGameObject;
 
     //Fold outs
     private bool showRandom = false;
@@ -55,6 +57,7 @@ public class CustomTerrainEditor : Editor
     private bool showVeg = false;
     private bool showHeights = false;
     private bool showDetails = false;
+    private bool showWater = false;
 
     private Texture2D hmTexture;
 
@@ -94,6 +97,8 @@ public class CustomTerrainEditor : Editor
         details = serializedObject.FindProperty("details");
         maxDetails = serializedObject.FindProperty("maxDetails");
         detailSpacing = serializedObject.FindProperty("detailSpacing");
+        waterHeight = serializedObject.FindProperty("waterHeight");
+        waterGameObject = serializedObject.FindProperty("waterGameObject");
 
         hmTexture = new Texture2D(513, 513, TextureFormat.ARGB32, false);
     }
@@ -286,6 +291,18 @@ public class CustomTerrainEditor : Editor
             if (GUILayout.Button("Apply Details"))
             {
                 terrain.AddDetails();
+            }
+        }
+        showWater = EditorGUILayout.Foldout(showWater, "Water");
+        if (showWater)
+        {
+            EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+            GUILayout.Label("Water", EditorStyles.boldLabel);
+            EditorGUILayout.Slider(waterHeight, 0, 1, new GUIContent("Water Height"));
+            EditorGUILayout.PropertyField(waterGameObject);
+            if (GUILayout.Button("Add Water"))
+            {
+                terrain.AddWater();
             }
         }
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
