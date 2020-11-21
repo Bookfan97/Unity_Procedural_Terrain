@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca7b324-e309-473f-93d8-457e8c72384c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain Layer 0.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain Layer 0.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain Layer 1.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain Layer 1.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain Layer 2.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain Layer 2.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain Layer 3.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain Layer 3.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain Layer 4.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain Layer 4.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +50,8 @@
         <option value="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TextureCreatorWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +109,7 @@
       <workItem from="1605749048717" duration="9036000" />
       <workItem from="1605835659670" duration="10418000" />
       <workItem from="1605931283638" duration="5231000" />
-      <workItem from="1605977714280" duration="1821000" />
+      <workItem from="1605977714280" duration="3179000" />
     </task>
     <servers />
   </component>

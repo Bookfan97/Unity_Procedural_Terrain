@@ -307,7 +307,7 @@ MonoBehaviour:
   randomHeightRange: {x: 0, y: 0.03}
   heightMapImage: {fileID: 2800000, guid: 61d6f931bb2060848b1e154f88d6aaee, type: 3}
   heightMapScale: {x: 1, y: 1, z: 1}
-  resetTerrain: 1
+  resetTerrain: 0
   perlinXScale: 0.0001
   perlinYScale: 0.0001
   perlinOffsetX: 4513
@@ -345,11 +345,11 @@ MonoBehaviour:
     maxSlope: 90
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
-    remove: 0
     splatOffset: 0.1
     splatNoiseXScale: 0.01
     splatNoiseYScale: 0.01
     splatNoiseScaler: 0.1
+    remove: 0
   - texture: {fileID: 2800000, guid: e4cc6b89f7fe0415b99809d203397c20, type: 3}
     minHeight: 0.2
     maxHeight: 0.4
@@ -357,11 +357,11 @@ MonoBehaviour:
     maxSlope: 90
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
-    remove: 0
     splatOffset: 0.1
     splatNoiseXScale: 0.01
     splatNoiseYScale: 0.01
     splatNoiseScaler: 0.1
+    remove: 0
   - texture: {fileID: 2800000, guid: fa749c6a04ad34af5af35082813d7df8, type: 3}
     minHeight: 0.4
     maxHeight: 0.6
@@ -369,11 +369,11 @@ MonoBehaviour:
     maxSlope: 90
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
-    remove: 0
     splatOffset: 0.1
     splatNoiseXScale: 0.01
     splatNoiseYScale: 0.01
     splatNoiseScaler: 0.1
+    remove: 0
   - texture: {fileID: 2800000, guid: 8b428e4e6cc624a4c9235f69da8e3edb, type: 3}
     minHeight: 0
     maxHeight: 0.1
@@ -381,11 +381,11 @@ MonoBehaviour:
     maxSlope: 90
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
-    remove: 0
     splatOffset: 0.1
     splatNoiseXScale: 0.01
     splatNoiseYScale: 0.01
     splatNoiseScaler: 0.1
+    remove: 0
   - texture: {fileID: 2800000, guid: 79d5431cd68194d08a40d2bbe4ebcef9, type: 3}
     minHeight: -1
     maxHeight: 0
@@ -393,23 +393,39 @@ MonoBehaviour:
     maxSlope: 90
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 50, y: 50}
-    remove: 0
     splatOffset: 0.1
     splatNoiseXScale: 0.01
     splatNoiseYScale: 0.01
     splatNoiseScaler: 0.1
+    remove: 0
   vegetation:
   - mesh: {fileID: -927199367670048503, guid: 2a44e858bd119bca11002b7b44295342, type: 3}
     minHeight: 0
     maxHeight: 0.2
     minSlope: 0
     maxSlope: 90
+    minScale: 0.5
+    maxScale: 1
+    color1: {r: 1, g: 1, b: 1, a: 1}
+    color2: {r: 1, g: 1, b: 1, a: 1}
+    lightColour: {r: 1, g: 1, b: 1, a: 1}
+    minRotation: 0
+    maxRotation: 360
+    density: 0.5
     remove: 0
   - mesh: {fileID: -927199367670048503, guid: 43202a31bd1113061100b7a844295342, type: 3}
     minHeight: 0.2
     maxHeight: 1
     minSlope: 0
     maxSlope: 90
+    minScale: 0.5
+    maxScale: 1
+    color1: {r: 1, g: 1, b: 1, a: 1}
+    color2: {r: 1, g: 1, b: 1, a: 1}
+    lightColour: {r: 1, g: 1, b: 1, a: 1}
+    minRotation: 0
+    maxRotation: 360
+    density: 0.5
     remove: 0
   maxTrees: 10000
   treeSpacing: 19
