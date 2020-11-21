@@ -118,6 +118,29 @@ public class CustomTerrain : MonoBehaviour
     public int maxTrees = 5000;
     public int treeSpacing = 5;
 
+    [System.Serializable]
+    public class Detail
+    {
+        public GameObject prototype = null;
+        public Texture2D prototypeTexture = null;
+        public float minHeight = 0.1f;
+        public float maxHeight = 0.2f;
+        public float minSlope = 0;
+        public float maxSlope = 1;
+        public float overlap = 0.01f;
+        public float feather = 0.05f;
+        public float density = 0.5f;
+        public bool remove = false;
+    }
+
+    public List<Detail> details = new List<Detail>()
+    {
+        new Detail()
+    };
+
+    public int maxDetails = 5000;
+    public int detailSpacing = 5;
+    
     private float[,] GetHeightMap()
     {
         if (!resetTerrain)
@@ -130,6 +153,74 @@ public class CustomTerrain : MonoBehaviour
                              terrainData.heightmapResolution];
     }
 
+    public void AddDetails()
+    {
+        DetailPrototype[] newDetailPrototypes;
+        newDetailPrototypes = new DetailPrototype[details.Count];
+        int dindex = 0;
+        foreach (Detail d in details)
+        {
+            newDetailPrototypes[dindex] = new DetailPrototype();
+            newDetailPrototypes[dindex].prototype = d.prototype;
+            newDetailPrototypes[dindex].prototypeTexture = d.prototypeTexture;
+            newDetailPrototypes[dindex].healthyColor = Color.white;
+            if (newDetailPrototypes[dindex].prototype)
+            {
+                newDetailPrototypes[dindex].usePrototypeMesh = true;
+                newDetailPrototypes[dindex].renderMode = DetailRenderMode.VertexLit;
+            }
+            else
+            {
+                newDetailPrototypes[dindex].usePrototypeMesh = false;
+                newDetailPrototypes[dindex].renderMode = DetailRenderMode.GrassBillboard;
+            }
+            dindex++;
+        }
+
+        terrainData.detailPrototypes = newDetailPrototypes;
+        for (int i = 0; i < terrainData.detailPrototypes.Length; i++)
+        {
+            int[,] detailMap = new int[terrainData.detailWidth, terrainData.detailHeight];
+            for (int y = 0; y < terrainData.detailHeight; y += detailSpacing)
+            {
+                for (int x = 0; x < terrainData.detailWidth; x += detailSpacing)
+                {
+                    if (UnityEngine.Random.Range(0.0f, 1.0F)> details[i].density)
+                    {
+                        continue;
+                    }
+
+                    detailMap[x, y] = 1;
+                }
+            }
+            terrainData.SetDetailLayer(0,0,i, detailMap);
+        }
+    }
+    
+    public void AddNewDetails()
+    {
+     details.Add(new Detail());   
+    }
+
+    public void RemoveDetails()
+    {
+        List<Detail> keptDetails = new List<Detail>();
+        for (int i = 0; i < details.Count; i++)
+        {
+            if (!details[i].remove)
+            {
+                keptDetails.Add(details[i]);
+            }
+        }
+
+        if (keptDetails.Count == 0)
+        {
+            keptDetails.Add(details[0]);
+        }
+
+        details = keptDetails;
+    }
+    
     public void PlantVegetation()
     {
         TreePrototype[] newTreePrototypes;
@@ -175,15 +266,15 @@ public class CustomTerrain : MonoBehaviour
                             Physics.Raycast(treeWorldPos - new Vector3(0, 10, 0), Vector3.up, out hit, 100, layerMask))
                         {
                             float treeHeight = (hit.point.y - this.transform.position.y) / terrainData.size.y;
-                            /*instance.position = new Vector3(
+                            instance.position = new Vector3(
                                 instance.position.x,
                                 treeHeight,
                                 instance.position.z
-                                );*/
-                            instance.position = new Vector3(
+                                );
+                            /*instance.position = new Vector3(
                                 instance.position.x * terrainData.size.x / terrainData.alphamapWidth,
                                 instance.position.y,
-                                instance.position.z * terrainData.size.z/terrainData.alphamapHeight);
+                                instance.position.z * terrainData.size.z/terrainData.alphamapHeight);*/
                             instance.rotation = UnityEngine.Random.Range(vegetation[tp].minRotation,
                                                                          vegetation[tp].maxRotation);
                             instance.prototypeIndex = tp;

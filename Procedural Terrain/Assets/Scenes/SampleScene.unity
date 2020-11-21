@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 860973391}
   - component: {fileID: 860973390}
   - component: {fileID: 860973393}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ MonoBehaviour:
   MPDheightMax: 2
   MPDheightDampenerPower: 2
   MPDroughness: 2
-  smoothAmount: 10
+  smoothAmount: 9
   terrain: {fileID: 860973391}
   terrainData: {fileID: 15600000, guid: 05d8de14baaf5af43a9bd0ca03ca4944, type: 2}
   splatHeights:
@@ -428,7 +428,30 @@ MonoBehaviour:
     density: 0.5
     remove: 0
   maxTrees: 10000
-  treeSpacing: 19
+  treeSpacing: 18
+  details:
+  - prototype: {fileID: -927199367670048503, guid: 8e41f14c6552d48e6a7992aaecc808e4, type: 3}
+    prototypeTexture: {fileID: 0}
+    minHeight: 0.1
+    maxHeight: 0.2
+    minSlope: 0
+    maxSlope: 1
+    overlap: 0.01
+    feather: 0.05
+    density: 0.5
+    remove: 0
+  - prototype: {fileID: 0}
+    prototypeTexture: {fileID: 2800000, guid: ba0dbc11bd11158b1100de1b44295342, type: 3}
+    minHeight: 0.1
+    maxHeight: 0.2
+    minSlope: 0
+    maxSlope: 1
+    overlap: 0.01
+    feather: 0.05
+    density: 0.5
+    remove: 0
+  maxDetails: 5000
+  detailSpacing: 5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
