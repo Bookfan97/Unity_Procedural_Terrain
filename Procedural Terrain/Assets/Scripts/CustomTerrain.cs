@@ -246,11 +246,31 @@ public class CustomTerrain : MonoBehaviour
                 }
             }
         }
+        terrainData.SetHeights(0,0,heightMap);
     }
 
     private void Tidal()
     {
-        throw new NotImplementedException();
+        float[,] heightMap =
+            terrainData.GetHeights(0, 0, terrainData.heightmapResolution, terrainData.heightmapResolution);
+        for (int y = 0; y < terrainData.heightmapResolution; y++)
+        {
+            for (int x = 0; x < terrainData.heightmapResolution; x++)
+            {
+                Vector2 thisLocation = new Vector2(x, y);
+                List<Vector2> neighbors = GenerateNeighbors(thisLocation, terrainData.heightmapResolution,
+                    terrainData.heightmapResolution);
+                foreach (Vector2 n in neighbors)
+                {
+                    if (heightMap[x, y] < waterHeight && heightMap[(int)n.x, (int)n.y] > waterHeight)
+                    {
+                        heightMap[x, y] = waterHeight;
+                        heightMap[(int) n.x, (int) n.y] = waterHeight;
+                    }
+                }
+            }
+        }
+        terrainData.SetHeights(0,0,heightMap);
     }
 
     private void River()
