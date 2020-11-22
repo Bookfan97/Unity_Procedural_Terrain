@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.7877358, g: 0.899729, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
     remove: 0
   maxDetails: 968
   detailSpacing: 2
-  waterHeight: 0
+  waterHeight: 0.01
   waterGameObject: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
   shoreLineMaterial: {fileID: 2100000, guid: c36c6adf98752ef49a8f903cf39558b3, type: 2}
   erosionType: 5
@@ -653,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378078206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: 0, z: 500}
+  m_LocalPosition: {x: 500, y: 3, z: 500}
   m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
