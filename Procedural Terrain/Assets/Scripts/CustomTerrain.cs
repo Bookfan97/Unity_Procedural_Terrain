@@ -173,7 +173,8 @@ public class CustomTerrain : MonoBehaviour
     //Clouds
     public int numClouds = 1;
     public int particlesPerCloud = 50;
-    public Vector3 cloudScale = new Vector3(1,1,1);
+    public Vector3 cloudMinScale = new Vector3(1,1,1);
+    public Vector3 cloudMaxScale = new Vector3(2,2,2);
     public Material cloudMaterial;
     public Material cloudShadowMaterial;
     public float cloudStartSize = 5;
@@ -211,7 +212,7 @@ public class CustomTerrain : MonoBehaviour
         {
             DestroyImmediate(allClouds[i]);
         }
-
+        Debug.Log("Clouds: " + numClouds);
         for (int c = 0; c < numClouds; c++)
         {
             GameObject cloudGameObject = new GameObject();
@@ -242,7 +243,9 @@ public class CustomTerrain : MonoBehaviour
             emission.SetBursts(new ParticleSystem.Burst[]{ new ParticleSystem.Burst(0.0f, (short) particlesPerCloud)});
             var shape = cloudSystem.shape;
             shape.shapeType = ParticleSystemShapeType.Sphere;
-            shape.scale = new Vector3(cloudScale.x, cloudScale.y, cloudScale.z);
+            Vector3 newScale = new Vector3(UnityEngine.Random.Range(cloudMinScale.x, cloudMaxScale.x),
+                UnityEngine.Random.Range(cloudMinScale.y, cloudMaxScale.y),
+                UnityEngine.Random.Range(cloudMinScale.z, cloudMaxScale.z));
             cloudGameObject.transform.parent = cloudManager.transform;
             cloudGameObject.transform.localScale = new Vector3(1,1,1);
         }
