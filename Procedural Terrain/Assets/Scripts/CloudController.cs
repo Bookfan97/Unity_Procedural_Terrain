@@ -31,6 +31,23 @@ public class CloudController : MonoBehaviour
         startPosition = this.transform.position;
     }
 
+    void Paint()
+    {
+        ParticleSystem.Particle[] particles = new ParticleSystem.Particle[cloudSystem.particleCount];
+        cloudSystem.GetParticles(particles);
+        if (particles.Length > 0)
+        {
+            for (int i = 0; i < particles.Length; i++)
+            {
+                particles[i].startColor =
+                    Color.Lerp(lining, color, particles[i].position.y / cloudSystem.shape.scale.y);
+            }
+
+            painted = true;
+            cloudSystem.SetParticles(particles, particles.Length);
+        }
+    }
+    
     // Update is called once per frame
     void Update()
     {
