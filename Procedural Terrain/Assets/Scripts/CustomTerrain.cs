@@ -230,6 +230,22 @@ public class CustomTerrain : MonoBehaviour
             ParticleSystem cloudSystem = cloudGameObject.AddComponent<ParticleSystem>();
             Renderer cloudRenderer = cloudGameObject.GetComponent<Renderer>();
             cloudRenderer.material = cloudMaterial;
+            cloudGameObject.layer = LayerMask.NameToLayer("Sky");
+            GameObject cloudProjector = new GameObject();
+            cloudProjector.name = "Shadow";
+            cloudProjector.transform.position = cloudGameObject.transform.position;
+            cloudProjector.transform.forward = Vector3.down;
+            cloudProjector.transform.parent = cloudGameObject.transform;
+            if (UnityEngine.Random.Range(0, 10) < 5)
+            {
+                Projector projector = cloudProjector.AddComponent<Projector>();
+                projector.material = cloudShadowMaterial;
+                projector.farClipPlane = terrainData.size.y;
+                int skyMaskLayer = 1 << LayerMask.NameToLayer("Sky");
+                int waterMaskLayer = 1 << LayerMask.NameToLayer("Water");
+                projector.ignoreLayers = skyMaskLayer | waterMaskLayer;
+                projector.fieldOfView = 20.0f;
+            }
             cloudRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             cloudRenderer.receiveShadows = false;
             ParticleSystem.MainModule main = cloudSystem.main;
@@ -1197,6 +1213,7 @@ public class CustomTerrain : MonoBehaviour
         AddTag(tagsProp, "Shore", TagType.Tag);
         tagManager.ApplyModifiedProperties();
         SerializedProperty layerProp = tagManager.FindProperty("layers");
+        AddTag(layerProp, "Sky", TagType.Layer);
         terrainLayer = AddTag(layerProp, "Terrain", TagType.Layer);
         tagManager.ApplyModifiedProperties();
         this.gameObject.tag = "Terrain";
