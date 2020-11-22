@@ -334,7 +334,7 @@ MonoBehaviour:
   MPDheightMax: 2
   MPDheightDampenerPower: 2
   MPDroughness: 2
-  smoothAmount: 5
+  smoothAmount: 0
   terrain: {fileID: 860973391}
   terrainData: {fileID: 15600000, guid: 05d8de14baaf5af43a9bd0ca03ca4944, type: 2}
   splatHeights:
@@ -462,16 +462,16 @@ MonoBehaviour:
     remove: 0
   maxDetails: 968
   detailSpacing: 2
-  waterHeight: 0.01
+  waterHeight: 0
   waterGameObject: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
   shoreLineMaterial: {fileID: 2100000, guid: c36c6adf98752ef49a8f903cf39558b3, type: 2}
-  erosionType: 3
-  erosionStrength: 0.003
+  erosionType: 2
+  erosionStrength: 0.457
   springsPerRiver: 5
   solubility: 0.01
   droplets: 353
-  erosionSmoothAmount: 5
-  erosionAmount: 0.045
+  erosionSmoothAmount: 0
+  erosionAmount: 0.044
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378078206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: 3, z: 500}
+  m_LocalPosition: {x: 500, y: 0, z: 500}
   m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}

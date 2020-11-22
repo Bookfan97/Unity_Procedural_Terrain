@@ -334,7 +334,40 @@ public class CustomTerrain : MonoBehaviour
 
     private void Wind()
     {
-        throw new NotImplementedException();
+        float[,] heightMap = terrainData.GetHeights(0, 0,
+            terrainData.heightmapResolution,
+            terrainData.heightmapResolution);
+        int width = terrainData.heightmapResolution;
+        int height = terrainData.heightmapResolution;
+
+        float WindDir = 30;
+        float sinAngle = -Mathf.Sin(Mathf.Deg2Rad * WindDir);
+        float cosAngle = Mathf.Cos(Mathf.Deg2Rad * WindDir);
+
+        for (int y = -(height - 1)*2; y <= height*2; y += 10)
+        {
+            for (int x = -(width - 1)*2; x <= width*2; x += 1)
+            {
+                float thisNoise = (float)Mathf.PerlinNoise(x * 0.06f, y * 0.06f) * 20 * erosionStrength;
+                int nx = (int)x;
+                int digy = (int)y + (int)thisNoise;
+                int ny = (int)y + 5 + (int)thisNoise;
+
+                Vector2 digCoords = new Vector2(x * cosAngle - digy * sinAngle, digy * cosAngle + x * sinAngle);
+                Vector2 pileCoords = new Vector2(nx * cosAngle - ny * sinAngle, ny * cosAngle + nx * sinAngle);
+
+                if (!(pileCoords.x < 0 || pileCoords.x > (width - 1) || pileCoords.y < 0 || 
+                      pileCoords.y > (height - 1) ||
+                      (int)digCoords.x < 0 || (int)digCoords.x > (width - 1) ||
+                      (int)digCoords.y < 0 || (int)digCoords.y > (height - 1)))
+                {
+                    heightMap[(int)digCoords.x, (int)digCoords.y] -= 0.001f;
+                    heightMap[(int)pileCoords.x, (int)pileCoords.y] += 0.001f;
+                }
+
+            }
+        }
+        terrainData.SetHeights(0, 0, heightMap);
     }
 
     public void AddWater()
@@ -372,8 +405,8 @@ public class CustomTerrain : MonoBehaviour
                 {
                     if (heightMap[x, y] < waterHeight && heightMap[(int)n.x, (int)n.y] > waterHeight)
                     {
-                        //if (quadCount < 1000)
-                        //{
+                        if (quadCount < 1000)
+                        {
                             quadCount++;
                             GameObject go = GameObject.CreatePrimitive(PrimitiveType.Quad);
                             go.transform.localScale *= 20.0f;
@@ -397,7 +430,7 @@ public class CustomTerrain : MonoBehaviour
 
 
                             //go.transform.parent = quads.transform;
-                       // }
+                            }
                     }
                 }
             }
