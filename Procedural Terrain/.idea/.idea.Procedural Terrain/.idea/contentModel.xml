@@ -41,6 +41,10 @@
           <e p="TextureCreatorWindow.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
         </e>
+        <e p="ShoreFoamResources" t="Include">
+          <e p="foamShader.shader" t="Include" />
+          <e p="WaveAnimation.cs" t="Include" />
+        </e>
         <e p="Standard Assets" t="Include">
           <e p="Environment" t="Include">
             <e p="Water" t="Include">

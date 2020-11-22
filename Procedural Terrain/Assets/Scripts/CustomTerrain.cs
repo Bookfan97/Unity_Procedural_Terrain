@@ -149,6 +149,7 @@ public class CustomTerrain : MonoBehaviour
     //Water
     public float waterHeight = 0.5f;
     public GameObject waterGameObject;
+    public Material shoreLineMaterial;
     
     private float[,] GetHeightMap()
     {
@@ -170,11 +171,99 @@ public class CustomTerrain : MonoBehaviour
             water = Instantiate(waterGameObject, this.transform.position, this.transform.rotation);
             water.name = "water";
         }
-        water.transform.position = this.transform.position + new Vector3(
-            terrainData.size.x / 2, 
-            waterHeight * terrainData.size.y/2, 
-            terrainData.size.z/2);
+        water.transform.position = this.transform.position + 
+                                   new Vector3(terrainData.size.x / 2, 
+                                       waterHeight * terrainData.size.y, 
+                                       terrainData.size.z / 2);
         water.transform.localScale = new Vector3(terrainData.size.x, 1, terrainData.size.z);
+    }
+
+    public void DrawShoreline()
+    {
+      float[,] heightMap = terrainData.GetHeights(0, 0, terrainData.heightmapResolution,
+                                                    terrainData.heightmapResolution);
+
+        int quadCount = 0;
+        //GameObject quads = new GameObject("QUADS");
+        for (int y = 0; y < terrainData.heightmapResolution; y++)
+        {
+            for (int x = 0; x < terrainData.heightmapResolution; x++)
+            {
+                //find spot on shore
+                Vector2 thisLocation = new Vector2(x, y);
+                List<Vector2> neighbors = GenerateNeighbors(thisLocation,
+                                                              terrainData.heightmapResolution,
+                                                              terrainData.heightmapResolution);
+                foreach (Vector2 n in neighbors)
+                {
+                    if (heightMap[x, y] < waterHeight && heightMap[(int)n.x, (int)n.y] > waterHeight)
+                    {
+                        //if (quadCount < 1000)
+                        //{
+                            quadCount++;
+                            GameObject go = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                            go.transform.localScale *= 20.0f;
+
+                            go.transform.position = this.transform.position +
+                                            new Vector3(y / (float)terrainData.heightmapResolution
+                                                          * terrainData.size.z,
+                                                        waterHeight * terrainData.size.y,
+                                                        x / (float)terrainData.heightmapResolution
+                                                          * terrainData.size.x);
+
+                            go.transform.LookAt(new Vector3(n.y / (float)terrainData.heightmapResolution
+                                                                * terrainData.size.z,
+                                                            waterHeight * terrainData.size.y,
+                                                            n.x / (float)terrainData.heightmapResolution
+                                                                * terrainData.size.x));    
+
+                            go.transform.Rotate(90, 0, 0);
+
+                            go.tag = "Shore";
+
+
+                            //go.transform.parent = quads.transform;
+                       // }
+                    }
+                }
+            }
+        }
+
+        GameObject[] shoreQuads = GameObject.FindGameObjectsWithTag("Shore");
+        MeshFilter[] meshFilters = new MeshFilter[shoreQuads.Length];
+        for (int m = 0; m < shoreQuads.Length; m++)
+        {
+            meshFilters[m] = shoreQuads[m].GetComponent<MeshFilter>();
+        }
+        CombineInstance[] combine = new CombineInstance[meshFilters.Length];
+        int i = 0;
+        while (i < meshFilters.Length)
+        {
+            combine[i].mesh = meshFilters[i].sharedMesh;
+            combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
+            meshFilters[i].gameObject.SetActive(false);
+            i++;
+        }
+
+        GameObject currentShoreLine = GameObject.Find("ShoreLine");
+        if (currentShoreLine)
+        {
+            DestroyImmediate(currentShoreLine);
+        }
+        GameObject shoreLine = new GameObject();
+        shoreLine.name = "ShoreLine";
+        shoreLine.AddComponent<WaveAnimation>();
+        shoreLine.transform.position = this.transform.position;
+        shoreLine.transform.rotation = this.transform.rotation;
+        MeshFilter thisMF = shoreLine.AddComponent<MeshFilter>();
+        thisMF.mesh = new Mesh();
+        shoreLine.GetComponent<MeshFilter>().sharedMesh.CombineMeshes(combine);
+
+        MeshRenderer r = shoreLine.AddComponent<MeshRenderer>();
+        r.sharedMaterial = shoreLineMaterial;
+
+        for (int sQ = 0; sQ < shoreQuads.Length; sQ++)
+            DestroyImmediate(shoreQuads[sQ]);
     }
     
     public void AddDetails()

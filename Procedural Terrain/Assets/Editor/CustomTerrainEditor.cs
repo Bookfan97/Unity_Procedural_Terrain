@@ -44,6 +44,7 @@ public class CustomTerrainEditor : Editor
     private SerializedProperty detailSpacing;
     private SerializedProperty waterHeight;    
     private SerializedProperty waterGameObject;
+    private SerializedProperty shoreLineMaterial;
 
     //Fold outs
     private bool showRandom = false;
@@ -99,7 +100,8 @@ public class CustomTerrainEditor : Editor
         detailSpacing = serializedObject.FindProperty("detailSpacing");
         waterHeight = serializedObject.FindProperty("waterHeight");
         waterGameObject = serializedObject.FindProperty("waterGameObject");
-
+        shoreLineMaterial = serializedObject.FindProperty("shoreLineMaterial");
+        
         hmTexture = new Texture2D(513, 513, TextureFormat.ARGB32, false);
     }
     private Vector2 scrollPos;
@@ -303,6 +305,11 @@ public class CustomTerrainEditor : Editor
             if (GUILayout.Button("Add Water"))
             {
                 terrain.AddWater();
+            }
+            EditorGUILayout.PropertyField(shoreLineMaterial);
+            if (GUILayout.Button("Draw Shoreline"))
+            {
+                terrain.DrawShoreline();
             }
         }
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
