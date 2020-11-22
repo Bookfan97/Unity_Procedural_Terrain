@@ -20,7 +20,502 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca7b324-e309-473f-93d8-457e8c72384c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/CrossPlatformInputGuidelines.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/CrossPlatformInputGuidelines.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/CarTiltControls.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/CarTiltControls.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/DualTouchControls.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/DualTouchControls.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/MobileAircraftControls.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/MobileAircraftControls.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/MobileSingleStickControl.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/MobileSingleStickControl.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/MobileTiltControlRig.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Prefabs/MobileTiltControlRig.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/TiltInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/TiltInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorOverSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorOverSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowOverSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowOverSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeOverSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeOverSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonCameraCycleUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonCameraCycleUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonResetSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonResetSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonSpacebarSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonSpacebarSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleFullUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleFullUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleSlowUpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleSlowUpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderBackgroundSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderBackgroundSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderHandleSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderHandleSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/TouchpadSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/CrossPlatformInput/Sprites/TouchpadSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Editor/CrossPlatformInput.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/BroadleafBark_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/Billboard.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/Billboard.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/FacingLeaves_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/FacingLeaves_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD0/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/FacingLeaves_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/FacingLeaves_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD1/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/FacingLeaves_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/FacingLeaves_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop.spm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop.spm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Specular.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Specular.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/Billboard.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/Billboard.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Leaves_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD0/Leaves_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Leaves_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD1/Leaves_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Leaves_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile Materials/LOD2/Leaves_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile.spm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile.spm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Specular.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Specular.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Card_Desktop.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Card_Desktop.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Card_Desktop_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Card_Desktop_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Card_Desktop_Spec.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Card_Desktop_Spec.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Desktop.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Desktop.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Desktop_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Desktop_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Desktop_Spec.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Desktop_Spec.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Mobile.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Mobile.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Mobile_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Mobile_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Mobile_Spec.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaves_Mobile_Spec.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_01_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_01_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_02.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_02.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_02_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Cap_02_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/ClippedFrond.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/ClippedFrond.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/ClippedFrond_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Broadleaf/ClippedFrond_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/Billboard.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/Billboard.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD2/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop.spm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop.spm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Specular.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Specular.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Dekstop_Spec.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Dekstop_Spec.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark_Detail.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark_Detail.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark_Detail_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark_Detail_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmBark_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmFrond.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmFrond.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmFrond_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmFrond_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmFrond_Spec.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/PalmFrond_Spec.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/Billboard.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/Billboard.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Leaves_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD1/Leaves_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Branches_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Branches_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Fronds_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD2/Fronds_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop.spm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop.spm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Billboards.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Billboards.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Billboards_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Billboards_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Normal.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Specular.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop_Atlas_Specular.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Thumb_Palm_Desktop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/SpeedTree/Palm/Thumb_Palm_Desktop.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/BillboardTextures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials/WaterBasicDaytime.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials/WaterBasicDaytime.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials/WaterBasicNighttime.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials/WaterBasicNighttime.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials/WaterDefault.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Materials/WaterDefault.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Models/WaterBasicPlane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Models/WaterBasicPlane.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Prefabs/WaterBasicDaytime.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Prefabs/WaterBasicDaytime.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Prefabs/WaterBasicNightime.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Prefabs/WaterBasicNightime.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Shaders/FXWaterBasic.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Shaders/FXWaterBasic.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicDaytimeGradient.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicDaytimeGradient.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNormals.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNormals.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials/WaterPlaneMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials/WaterPlaneMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials/WaterProDaytime.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials/WaterProDaytime.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials/WaterProNighttime.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Materials/WaterProNighttime.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Models/WaterPlane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Models/WaterPlane.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Prefabs/WaterProDaytime.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Prefabs/WaterProDaytime.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Prefabs/WaterProNighttime.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Prefabs/WaterProNighttime.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/Displace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/Displace.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/MeshContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/MeshContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/PlanarReflection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/PlanarReflection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/SpecularLighting.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/SpecularLighting.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/WaterBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/WaterBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Shaders/FXWaterPro.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Shaders/FXWaterPro.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterBump.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterBump.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterFresnel.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterFresnel.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterProDaytimeGradient.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterProDaytimeGradient.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials/OceanPlaneMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials/OceanPlaneMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Simple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Simple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Models/OceanPlane.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Models/OceanPlane.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Prefabs/Water4Advanced.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Prefabs/Water4Advanced.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Prefabs/Water4Simple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Prefabs/Water4Simple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders/FXWater4Advanced.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders/FXWater4Advanced.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders/FXWater4Simple.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders/FXWater4Simple.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders/WaterInclude.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Shaders/WaterInclude.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Textures/SimpleFoam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Textures/SimpleFoam.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Textures/SmallWaves.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Environment/Water/Water4/Textures/SmallWaves.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ActivateTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ActivateTrigger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/AlphaButtonClickMask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/AlphaButtonClickMask.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/AutoMobileShaderSwitch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/AutoMobileShaderSwitch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/AutoMoveAndRotate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/AutoMoveAndRotate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/CameraRefocus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/CameraRefocus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/CurveControlledBob.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/CurveControlledBob.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/DragRigidbody.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/DragRigidbody.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/DynamicShadowSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/DynamicShadowSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/EventSystemChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/EventSystemChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/FOVKick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/FOVKick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/FPSCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/FPSCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/FollowTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/FollowTarget.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ForcedReset.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ForcedReset.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/LerpControlledBob.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/LerpControlledBob.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ObjectResetter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ObjectResetter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/PlatformSpecificContent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/PlatformSpecificContent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/Prefabs/FramerateCounter.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/Prefabs/FramerateCounter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/SimpleMouseRotator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/SimpleMouseRotator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/SmoothFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/SmoothFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/TimedObjectActivator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/TimedObjectActivator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/TimedObjectDestructor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/TimedObjectDestructor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/WaypointCircuit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/WaypointCircuit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/WaypointProgressTracker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Assets/Standard Assets/Utility/WaypointProgressTracker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/Packages/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Unity Project/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Procedural Terrain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,16 +528,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextureCreatorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloudManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloudController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Terrain Assets/Scripts/CustomTerrain.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TextureCreatorWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CustomTerrainEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CloudManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CloudController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomTerrain.cs" />
       </list>
     </option>
@@ -102,6 +601,7 @@
       <workItem from="1605835659670" duration="10418000" />
       <workItem from="1605931283638" duration="5231000" />
       <workItem from="1605977714280" duration="25938000" />
+      <workItem from="1606067447316" duration="3857000" />
     </task>
     <servers />
   </component>

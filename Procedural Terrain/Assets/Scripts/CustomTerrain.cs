@@ -170,6 +170,19 @@ public class CustomTerrain : MonoBehaviour
     public int erosionSmoothAmount = 5;
     public float erosionAmount =  0.1f;
     
+    //Clouds
+    public int numClouds = 1;
+    public int particlesPerCloud = 50;
+    public Vector3 cloudScale = new Vector3(1,1,1);
+    public Material cloudMaterial;
+    public Material cloudShadowMaterial;
+    public float cloudStartSize = 5;
+    public Color cloudColor = Color.white;
+    public Color cloudLining = Color.gray;
+    public float cloudMinSpeed = 0.2f;
+    public float cloudMaxSpeed = 0.5f;
+    public float cloudRange = 500.0f;
+    
     private float[,] GetHeightMap()
     {
         if (!resetTerrain)
@@ -180,6 +193,53 @@ public class CustomTerrain : MonoBehaviour
         else
             return new float[terrainData.heightmapResolution,
                              terrainData.heightmapResolution];
+    }
+
+    public void GenerateClouds()
+    {
+        GameObject cloudManager = GameObject.Find("CloudManager");
+        if (!cloudManager)
+        {
+            cloudManager = new GameObject();
+            cloudManager.name = "CloudManager";
+            cloudManager.AddComponent<CloudManager>();
+            cloudManager.transform.position = this.transform.position;
+        }
+
+        GameObject[] allClouds = GameObject.FindGameObjectsWithTag("Cloud");
+        for (int i = 0; i < allClouds.Length; i++)
+        {
+            DestroyImmediate(allClouds[i]);
+        }
+
+        for (int c = 0; c < numClouds; c++)
+        {
+            GameObject cloudGameObject = new GameObject();
+            cloudGameObject.name = "Cloud " + c;
+            cloudGameObject.tag = "Cloud";
+            cloudGameObject.transform.rotation = cloudManager.transform.rotation;
+            cloudGameObject.transform.position = cloudManager.transform.position;
+            CloudController cloudController = cloudGameObject.AddComponent<CloudController>();
+            ParticleSystem cloudSystem = cloudGameObject.AddComponent<ParticleSystem>();
+            Renderer cloudRenderer = cloudGameObject.GetComponent<Renderer>();
+            cloudRenderer.material = cloudMaterial;
+            cloudRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            cloudRenderer.receiveShadows = false;
+            ParticleSystem.MainModule main = cloudSystem.main;
+            main.loop = false;
+            main.startLifetime = Mathf.Infinity;
+            main.startSpeed = 0;
+            main.startSize = cloudStartSize;
+            main.startColor = Color.white;
+            var emission = cloudSystem.emission;
+            emission.rateOverTime = 0;
+            emission.SetBursts(new ParticleSystem.Burst[]{ new ParticleSystem.Burst(0.0f, (short) particlesPerCloud)});
+            var shape = cloudSystem.shape;
+            shape.shapeType = ParticleSystemShapeType.Sphere;
+            shape.scale = new Vector3(cloudScale.x, cloudScale.y, cloudScale.z);
+            cloudGameObject.transform.parent = cloudManager.transform;
+            cloudGameObject.transform.localScale = new Vector3(1,1,1);
+        }
     }
 
     public void Erode()

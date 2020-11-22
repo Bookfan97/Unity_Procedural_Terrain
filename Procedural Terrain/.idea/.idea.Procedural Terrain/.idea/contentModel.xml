@@ -37,6 +37,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CloudController.cs" t="Include" />
+          <e p="CloudManager.cs" t="Include" />
           <e p="CustomTerrain.cs" t="Include" />
           <e p="TextureCreatorWindow.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
@@ -46,6 +48,15 @@
           <e p="WaveAnimation.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
+          <e p="Effects" t="Include">
+            <e p="Projectors" t="Include">
+              <e p="Guidelines.txt" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="ProjectorLight.shader" t="Include" />
+                <e p="ProjectorMultiply.shader" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Environment" t="Include">
             <e p="Water" t="Include">
               <e p="Water" t="Include">
