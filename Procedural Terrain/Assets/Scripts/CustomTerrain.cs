@@ -159,7 +159,8 @@ public class CustomTerrain : MonoBehaviour
         Thermal = 1,
         Tidal = 2,
         River = 3,
-        Wind = 4
+        Wind = 4,
+        Canyon = 5
     }
     public ErosionType erosionType = ErosionType.Rain;
     public float erosionStrength = 0.1f;
@@ -202,6 +203,10 @@ public class CustomTerrain : MonoBehaviour
         else if (erosionType == ErosionType.Wind)
         {
             Wind();
+        }
+        else if (erosionType == ErosionType.Canyon)
+        {
+            DigCanyon();
         }
 
         smoothAmount = erosionSmoothAmount;
@@ -369,7 +374,43 @@ public class CustomTerrain : MonoBehaviour
         }
         terrainData.SetHeights(0, 0, heightMap);
     }
+    float[,] tempHeightMap;
+    public void DigCanyon()
+    {
+        float digDepth = erosionStrength;
+        float bankSlope = erosionAmount;
+        float maxDepth = 0;
+        tempHeightMap = terrainData.GetHeights(0, 0, terrainData.heightmapResolution,
+            terrainData.heightmapResolution);
+        int cx = 1;
+        int cy = UnityEngine.Random.Range(10, terrainData.heightmapResolution - 10);
+        while (cy >= 0 && cy < terrainData.heightmapResolution && cx > 0
+               && cx < terrainData.heightmapResolution)
+        {
+            CanyonCrawler(cx, cy, tempHeightMap[cx, cy] - digDepth, bankSlope, maxDepth);
+            cx = cx + UnityEngine.Random.Range(-1, 4);
+            cy = cy + UnityEngine.Random.Range(-2, 3);
+        }
+        terrainData.SetHeights(0, 0, tempHeightMap);
+    }
 
+    void CanyonCrawler(int x, int y, float height, float slope, float maxDepth)
+    {
+        if (x < 0 || x >= terrainData.heightmapResolution) return;
+        if (y < 0 || y >= terrainData.heightmapResolution) return; 
+        if (height <= maxDepth) return;
+        if (tempHeightMap[x, y] <= height) return;
+
+        tempHeightMap[x, y] = height;
+
+        CanyonCrawler(x + 1, y, height + UnityEngine.Random.Range(slope, slope + 0.01f), slope, maxDepth);
+        CanyonCrawler(x - 1, y, height + UnityEngine.Random.Range(slope, slope + 0.01f), slope, maxDepth);
+        CanyonCrawler(x + 1, y + 1, height + UnityEngine.Random.Range(slope, slope + 0.01f), slope, maxDepth);
+        CanyonCrawler(x - 1, y + 1, height + UnityEngine.Random.Range(slope, slope + 0.01f), slope, maxDepth);
+        CanyonCrawler(x, y - 1, height + UnityEngine.Random.Range(slope, slope + 0.01f), slope, maxDepth);
+        CanyonCrawler(x, y + 1, height + UnityEngine.Random.Range(slope, slope + 0.01f), slope, maxDepth);
+    }
+    
     public void AddWater()
     {
         GameObject water = GameObject.Find("water");

@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bba2ce17e853f844b268c49e3821101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomHeightRange: {x: 0, y: 0.03}
+  randomHeightRange: {x: 0, y: 1}
   heightMapImage: {fileID: 2800000, guid: 61d6f931bb2060848b1e154f88d6aaee, type: 3}
   heightMapScale: {x: 1, y: 1, z: 1}
   resetTerrain: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
   MPDheightMax: 2
   MPDheightDampenerPower: 2
   MPDroughness: 2
-  smoothAmount: 0
+  smoothAmount: 1
   terrain: {fileID: 860973391}
   terrainData: {fileID: 15600000, guid: 05d8de14baaf5af43a9bd0ca03ca4944, type: 2}
   splatHeights:
@@ -465,13 +465,13 @@ MonoBehaviour:
   waterHeight: 0
   waterGameObject: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
   shoreLineMaterial: {fileID: 2100000, guid: c36c6adf98752ef49a8f903cf39558b3, type: 2}
-  erosionType: 2
-  erosionStrength: 0.457
-  springsPerRiver: 5
-  solubility: 0.01
-  droplets: 353
-  erosionSmoothAmount: 0
-  erosionAmount: 0.044
+  erosionType: 5
+  erosionStrength: 0.1
+  springsPerRiver: 15
+  solubility: 0.04
+  droplets: 204
+  erosionSmoothAmount: 1
+  erosionAmount: 0.01
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
