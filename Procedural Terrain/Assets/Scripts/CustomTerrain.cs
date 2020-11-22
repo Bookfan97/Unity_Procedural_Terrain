@@ -167,6 +167,7 @@ public class CustomTerrain : MonoBehaviour
     public float solubility = 0.01f;
     public int droplets = 10;
     public int erosionSmoothAmount = 5;
+    public float erosionAmount =  0.1f;
     
     private float[,] GetHeightMap()
     {
@@ -222,13 +223,32 @@ public class CustomTerrain : MonoBehaviour
         }
         terrainData.SetHeights(0,0,heightMap);
     }
-
-    private void Tidal()
+    
+    private void Thermal()
     {
-        throw new NotImplementedException();
+        float[,] heightMap =
+            terrainData.GetHeights(0, 0, terrainData.heightmapResolution, terrainData.heightmapResolution);
+        for (int y = 0; y < terrainData.heightmapResolution; y++)
+        {
+            for (int x = 0; x < terrainData.heightmapResolution; x++)
+            {
+                Vector2 thisLocation = new Vector2(x, y);
+                List<Vector2> neighbors = GenerateNeighbors(thisLocation, terrainData.heightmapResolution,
+                    terrainData.heightmapResolution);
+                foreach (Vector2 n in neighbors)
+                {
+                    if (heightMap[x, y] > heightMap[(int)n.x, (int)n.y] + erosionStrength)
+                    {
+                        float currentHeight = heightMap[x, y];
+                        heightMap[x, y] -= currentHeight * 0.01f;
+                        heightMap[(int) n.x, (int) n.y] += currentHeight * erosionAmount;
+                    }
+                }
+            }
+        }
     }
 
-    private void Thermal()
+    private void Tidal()
     {
         throw new NotImplementedException();
     }

@@ -46,6 +46,7 @@ public class CustomTerrainEditor : Editor
     private SerializedProperty solubility;
     private SerializedProperty droplets;
     private SerializedProperty erosionSmoothAmount;
+    private SerializedProperty erosionAmount;
     private GUITableState vegMapTable;    
     private GUITableState splatMapTable;
     private GUITableState perlinParameterTable;
@@ -113,6 +114,7 @@ public class CustomTerrainEditor : Editor
         solubility = serializedObject.FindProperty("solubility");
         droplets = serializedObject.FindProperty("droplets");
         erosionSmoothAmount = serializedObject.FindProperty("erosionSmoothAmount");
+        erosionAmount = serializedObject.FindProperty("erosionAmount");
         hmTexture = new Texture2D(513, 513, TextureFormat.ARGB32, false);
     }
     private Vector2 scrollPos;
@@ -330,6 +332,7 @@ public class CustomTerrainEditor : Editor
             GUILayout.Label("Erosion", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(erosionType);
             EditorGUILayout.Slider(erosionStrength, 0, 1, new GUIContent("Erosion Strength"));
+            EditorGUILayout.Slider(erosionAmount, 0, 1, new GUIContent("Erosion Amount"));
             EditorGUILayout.IntSlider(droplets, 0, 500, new GUIContent("Droplets"));
             EditorGUILayout.Slider(solubility, 0.01f, 1, new GUIContent("Solubility"));
             EditorGUILayout.IntSlider(springsPerRiver, 0, 20, new GUIContent("Springs Per River"));
