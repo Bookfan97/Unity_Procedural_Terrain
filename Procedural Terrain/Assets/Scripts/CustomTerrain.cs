@@ -215,55 +215,64 @@ public class CustomTerrain : MonoBehaviour
         Debug.Log("Clouds: " + numClouds);
         for (int c = 0; c < numClouds; c++)
         {
-            GameObject cloudGameObject = new GameObject();
-            cloudGameObject.name = "Cloud " + c;
-            cloudGameObject.tag = "Cloud";
-            cloudGameObject.transform.rotation = cloudManager.transform.rotation;
-            cloudGameObject.transform.position = cloudManager.transform.position;
-            CloudController cloudController = cloudGameObject.AddComponent<CloudController>();
-            cloudController.lining = cloudLining;
-            cloudController.color = cloudColor;
-            cloudController.numberOfParticles = particlesPerCloud;
-            cloudController.minSpeed = cloudMinSpeed;
-            cloudController.maxSpeed = cloudMaxSpeed;
-            cloudController.distance = cloudRange;
-            ParticleSystem cloudSystem = cloudGameObject.AddComponent<ParticleSystem>();
-            Renderer cloudRenderer = cloudGameObject.GetComponent<Renderer>();
-            cloudRenderer.material = cloudMaterial;
-            cloudGameObject.layer = LayerMask.NameToLayer("Sky");
+              GameObject cloudGO = new GameObject();
+            cloudGO.name = "Cloud" + c;
+            cloudGO.tag = "Cloud";
+
+            cloudGO.transform.rotation = cloudManager.transform.rotation;
+            cloudGO.transform.position = cloudManager.transform.position;
+            CloudController cc = cloudGO.AddComponent<CloudController>();
+            cc.lining = cloudLining;
+            cc.color = cloudColor;
+            cc.numberOfParticles = particlesPerCloud;
+            cc.minSpeed = cloudMinSpeed;
+            cc.maxSpeed = cloudMaxSpeed;
+            cc.distance = cloudRange;
+
+            ParticleSystem cloudSystem = cloudGO.AddComponent<ParticleSystem>();
+            Renderer cloudRend = cloudGO.GetComponent<Renderer>();
+            cloudRend.material = cloudMaterial;
+            cloudGO.layer = LayerMask.NameToLayer("Sky");
             GameObject cloudProjector = new GameObject();
             cloudProjector.name = "Shadow";
-            cloudProjector.transform.position = cloudGameObject.transform.position;
+            cloudProjector.transform.position = cloudGO.transform.position;
             cloudProjector.transform.forward = Vector3.down;
-            cloudProjector.transform.parent = cloudGameObject.transform;
-            if (UnityEngine.Random.Range(0, 10) < 5)
+            cloudProjector.transform.parent = cloudGO.transform;
+
+            if(UnityEngine.Random.Range(0,10) < 5)
             {
-                Projector projector = cloudProjector.AddComponent<Projector>();
-                projector.material = cloudShadowMaterial;
-                projector.farClipPlane = terrainData.size.y;
-                int skyMaskLayer = 1 << LayerMask.NameToLayer("Sky");
-                int waterMaskLayer = 1 << LayerMask.NameToLayer("Water");
-                projector.ignoreLayers = skyMaskLayer | waterMaskLayer;
-                projector.fieldOfView = 20.0f;
+                Projector cp = cloudProjector.AddComponent<Projector>();
+                cp.material = cloudShadowMaterial;
+                cp.farClipPlane = terrainData.size.y;
+                int skyLayerMask = 1 << LayerMask.NameToLayer("Sky");
+                int waterLayerMask = 1 << LayerMask.NameToLayer("Water");
+                cp.ignoreLayers = skyLayerMask | waterLayerMask;
+                cp.fieldOfView = 20.0f;
             }
-            cloudRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-            cloudRenderer.receiveShadows = false;
+            
+            cloudRend.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            cloudRend.receiveShadows = false;
             ParticleSystem.MainModule main = cloudSystem.main;
             main.loop = false;
             main.startLifetime = Mathf.Infinity;
             main.startSpeed = 0;
             main.startSize = cloudStartSize;
             main.startColor = Color.white;
+
             var emission = cloudSystem.emission;
-            emission.rateOverTime = 0;
-            emission.SetBursts(new ParticleSystem.Burst[]{ new ParticleSystem.Burst(0.0f, (short) particlesPerCloud)});
+            emission.rateOverTime = 0; //all at once
+            emission.SetBursts(new ParticleSystem.Burst[] {
+                    new ParticleSystem.Burst(0.0f, (short)particlesPerCloud) });
+
             var shape = cloudSystem.shape;
             shape.shapeType = ParticleSystemShapeType.Sphere;
             Vector3 newScale = new Vector3(UnityEngine.Random.Range(cloudMinScale.x, cloudMaxScale.x),
-                UnityEngine.Random.Range(cloudMinScale.y, cloudMaxScale.y),
-                UnityEngine.Random.Range(cloudMinScale.z, cloudMaxScale.z));
-            cloudGameObject.transform.parent = cloudManager.transform;
-            cloudGameObject.transform.localScale = new Vector3(1,1,1);
+                                           UnityEngine.Random.Range(cloudMinScale.y, cloudMaxScale.y),
+                                           UnityEngine.Random.Range(cloudMinScale.z, cloudMaxScale.z));
+            shape.scale = newScale;
+
+            cloudGO.transform.parent = cloudManager.transform;
+            cloudGO.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 
